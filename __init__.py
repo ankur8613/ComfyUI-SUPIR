@@ -1,5 +1,8 @@
 from .nodes import SUPIR_Upscale
 from .nodes_v2 import SUPIR_sample, SUPIR_model_loader, SUPIR_first_stage, SUPIR_encode, SUPIR_decode, SUPIR_conditioner, SUPIR_tiles
+import subprocess
+
+subprocess.run(['pip', 'install', '-r', 'requirements.txt'])
 
 NODE_CLASS_MAPPINGS = {
     "SUPIR_Upscale": SUPIR_Upscale,
